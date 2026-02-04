@@ -1,0 +1,30 @@
+{
+    "name": "ucomodity",
+    "version": "1.0.0",
+    "description": "E-Commerce Platform untuk Tanaman Hias & Perkebunan - Powered by SawitDB",
+    "main": "sawit-server.js",
+    "scripts": {
+        "sawit:start": "node sawit-server.js",
+        "sawit:init": "node scripts/init-database.js",
+        "sawit:seed": "node scripts/seed-database.js",
+        "dev": "concurrently \"npm run sawit:start\" \"php artisan serve\"",
+        "build": "vite build"
+    },
+    "keywords": [
+        "ecommerce",
+        "tanaman",
+        "sawitdb",
+        "indonesia"
+    ],
+    "author": "Ucomodity Team",
+    "license": "MIT",
+    "dependencies": {
+        "@wowoengine/sawitdb": "^1.0.0"
+    },
+    "devDependencies": {
+        "concurrently": "^9.1.0",
+        "axios": "^1.7.9",
+        "laravel-vite-plugin": "^1.1.1",
+        "vite": "^6.0.5"
+    }
+}
